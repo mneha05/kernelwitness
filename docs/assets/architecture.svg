@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1300" height="640" viewBox="0 0 1300 640">
+<rect width="1300" height="640" rx="24" fill="#090b12"/>
+<defs><filter id="g"><feGaussianBlur stdDeviation="5" result="x"/><feMerge><feMergeNode in="x"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+<g font-family="Arial, sans-serif" fill="#f7f9ff" text-anchor="middle">
+<g><rect x="475" y="50" width="350" height="75" rx="16" fill="#151c2b" stroke="#7c9cff" stroke-width="2"/><text x="650" y="82" font-weight="700" font-size="22">your failing command</text><text x="650" y="106" fill="#8f9ab0" font-family="monospace" font-size="14">python train.py · pytest · custom binary</text></g>
+<g><rect x="80" y="205" width="245" height="100" rx="16" fill="#121a26" stroke="#49e6b4"/><text x="202" y="242" font-weight="700" font-size="19">Recorder</text><text x="202" y="269" fill="#8f9ab0" font-size="14">repeat · timeout · redact</text><text x="202" y="289" fill="#8f9ab0" font-size="14">capture stdout/stderr</text></g>
+<g><rect x="375" y="205" width="245" height="100" rx="16" fill="#121a26" stroke="#ff7fb7"/><text x="497" y="242" font-weight="700" font-size="19">Classifier</text><text x="497" y="269" fill="#8f9ab0" font-size="14">illegal access · OOM</text><text x="497" y="289" fill="#8f9ab0" font-size="14">assert · race · timeout</text></g>
+<g><rect x="680" y="205" width="245" height="100" rx="16" fill="#121a26" stroke="#ffc468"/><text x="802" y="242" font-weight="700" font-size="19">CUDA tools</text><text x="802" y="269" fill="#8f9ab0" font-size="14">Compute Sanitizer</text><text x="802" y="289" fill="#8f9ab0" font-size="14">coredump · cuda-gdb context</text></g>
+<g><rect x="975" y="205" width="245" height="100" rx="16" fill="#121a26" stroke="#7c9cff"/><text x="1097" y="242" font-weight="700" font-size="19">Doctor</text><text x="1097" y="269" fill="#8f9ab0" font-size="14">GPU · driver · CUDA</text><text x="1097" y="289" fill="#8f9ab0" font-size="14">PyTorch · Triton · Nsight</text></g>
+<g><rect x="190" y="415" width="310" height="115" rx="18" fill="#101822" stroke="#49e6b4" stroke-width="2"/><text x="345" y="454" font-weight="700" font-size="21">Failure-preserving reducer</text><text x="345" y="482" fill="#8f9ab0" font-size="14">4096 → 1024 → 512 → 257</text><text x="345" y="506" fill="#8f9ab0" font-size="14">32 heads → 1 head</text></g>
+<g><rect x="790" y="415" width="310" height="115" rx="18" fill="#101822" stroke="#ff7fb7" stroke-width="2"/><text x="945" y="454" font-weight="700" font-size="21">Repro bundle</text><text x="945" y="482" fill="#8f9ab0" font-size="14">HTML · JSON · Markdown</text><text x="945" y="506" fill="#8f9ab0" font-size="14">logs · command.sh · ZIP</text></g>
+</g>
+<g stroke="#566781" stroke-width="3" fill="none"><path d="M650 125V170H202V205"/><path d="M650 170H497V205"/><path d="M650 170H802V205"/><path d="M650 170H1097V205"/><path d="M497 305V355H345V415"/><path d="M802 305V355H945V415"/><path d="M345 530V575H945V530"/></g>
+<circle cx="650" cy="170" r="6" fill="#7c9cff" filter="url(#g)"/>
+</svg>
