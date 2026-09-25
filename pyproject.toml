@@ -7,7 +7,7 @@ name = "kernelwitness"
 version = "0.1.0"
 description = "Turn GPU failures into structured, minimal, shareable repro bundles."
 readme = "README.md"
-requires-python = ">=3.10"
+requires-python = ">=3.11"
 license = "Apache-2.0"
 authors = [{name = "Neha Mahesh"}]
 dependencies = []
@@ -17,6 +17,9 @@ classifiers = [
   "Environment :: Console",
   "Intended Audience :: Developers",
   "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
   "Topic :: Software Development :: Debuggers",
 ]
 
