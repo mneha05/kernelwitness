@@ -1,0 +1,15 @@
+name: Bug report
+description: KernelWitness itself behaved incorrectly
+title: "[bug] "
+labels: [bug]
+body:
+  - type: textarea
+    id: behavior
+    attributes: {label: What happened?, description: Include the KernelWitness command and observed behavior.}
+    validations: {required: true}
+  - type: textarea
+    id: doctor
+    attributes: {label: kernelwitness doctor --json, render: json}
+  - type: textarea
+    id: report
+    attributes: {label: Redacted report details, description: Never post proprietary source or secrets.}
