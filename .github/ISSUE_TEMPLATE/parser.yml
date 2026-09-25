@@ -1,0 +1,12 @@
+name: New sanitizer output fixture
+description: Help KernelWitness recognize another NVIDIA diagnostic shape
+title: "[parser] "
+labels: [parser]
+body:
+  - type: dropdown
+    id: tool
+    attributes: {label: Tool, options: [memcheck, racecheck, initcheck, synccheck, cuda-gdb, other]}
+  - type: textarea
+    id: output
+    attributes: {label: Minimal redacted output, render: text}
+    validations: {required: true}
