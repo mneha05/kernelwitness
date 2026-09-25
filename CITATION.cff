@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+title: KernelWitness
+message: "If KernelWitness materially helps a research artifact, please cite the software repository."
+type: software
+authors:
+  - family-names: Mahesh
+    given-names: Neha
+version: 0.1.0
+license: Apache-2.0
+repository-code: "https://github.com/mneha05/kernelwitness"
