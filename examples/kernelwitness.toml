@@ -1,0 +1,8 @@
+[repro]
+command = ["python", "examples/simulated_crash.py", "--seq", "{seq}", "--heads", "{heads}"]
+expected = "illegal_memory_access"
+timeout = 10
+
+[parameters]
+seq = [64, 128, 256, 257, 512, 1024, 4096]
+heads = [1, 2, 4, 8, 16, 32]
