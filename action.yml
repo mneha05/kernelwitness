@@ -1,0 +1,24 @@
+name: KernelWitness GPU Failure Report
+description: Capture a command failure and produce a KernelWitness report artifact. GPU debugging requires a CUDA-capable runner.
+inputs:
+  command:
+    description: Command to run
+    required: true
+  sanitizer:
+    description: none, memcheck, racecheck, initcheck, or synccheck
+    default: none
+runs:
+  using: composite
+  steps:
+    - shell: bash
+      run: python -m pip install "${{ github.action_path }}"
+    - shell: bash
+      run: |
+        set +e
+        kernelwitness run --attempts 2 --sanitizer "${{ inputs.sanitizer }}" --out kernelwitness-report -- bash -lc '${{ inputs.command }}'
+        echo $? > kernelwitness-report/exit-code.txt
+        exit 0
+    - uses: actions/upload-artifact@v4
+      with:
+        name: kernelwitness-report
+        path: kernelwitness-report/
